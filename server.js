@@ -8,6 +8,7 @@ const PORT = process.env.PORT
 const app = express()
 
 // MIDDLEWARE
+app.use(express.static("public"))
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
@@ -21,6 +22,11 @@ app.get("/", (req, res) => {
 // all breads routes
 const breadsController = require("./controllers/breads_controller")
 app.use("/breads", breadsController)
+
+//404 not found page
+app.get("*", (req, res)=> {
+    res.render("notfound")
+})
 
 //Listen
 app.listen(PORT, () => {

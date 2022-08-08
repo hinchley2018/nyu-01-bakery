@@ -15,10 +15,18 @@ breadsRouter.get("/:arrayIndex", (req, res) => {
     let index = req.params.arrayIndex
     //sends the raw data
     // res.send(Breads[index])
-    console.log(`get request to /breads/${index}`,  Breads[index])
-    res.render("show", {
-        bread: Breads[index],
-    })
+    const bread = Breads[index]
+    console.log(`get request to /breads/${index}`, bread )
+    //if that bread was found
+    if (bread){
+        res.render("show", {
+            bread: bread,
+        })
+    }
+    else {
+        res.render("notfound")
+    }
+    
 })
 
 module.exports = breadsRouter;
