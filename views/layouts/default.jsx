@@ -7,7 +7,7 @@ function DefualtLayout(html){
                 <title>{html.title || "Default Layout"}</title>
             </head>
             <body>
-                <h1>Hello from default layout</h1>
+                
                 {html.children}
             </body>
         </html>
