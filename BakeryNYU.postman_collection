@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "d32f4e07-c129-4581-b01d-c89516c3eb39",
+		"name": "Bakery NYU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get breads",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/breads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"breads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create bread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/breads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"breads"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
