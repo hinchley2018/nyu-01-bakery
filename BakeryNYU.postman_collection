@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d32f4e07-c129-4581-b01d-c89516c3eb39",
+		"_postman_id": "b50a9bab-56b4-404a-a9ca-555f8f20801f",
 		"name": "Bakery NYU",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -29,6 +29,16 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "new bread",
+							"type": "default"
+						}
+					]
+				},
 				"url": {
 					"raw": "http://localhost:3000/breads",
 					"protocol": "http",
