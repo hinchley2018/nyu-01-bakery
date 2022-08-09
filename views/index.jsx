@@ -17,6 +17,9 @@ function IndexView({ breads, title }) {
                     })
                 }
             </ul>
+            <a href="/breads/new">
+                <button>Create a new bread</button>
+            </a>
         </DefaultLayout>
     )
 }

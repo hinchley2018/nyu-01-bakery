@@ -13,6 +13,9 @@ app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
+//here is how to read that kind of data
+app.use(express.urlencoded({extended: true}))
+
 
 //Routes
 app.get("/", (req, res) => {
